@@ -1,0 +1,11 @@
+.menu-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.menu-item {
+    padding: 10px;
+    color: #333;
+}
