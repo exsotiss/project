@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ClaimController;
+use App\Http\Controllers\InfoUserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -77,3 +79,8 @@ Route::get('/claims', [ClaimController::class, 'index'])->name('claims.index');
 
 //new
 Route::resource('claims', ClaimController::class);
+//warning
+use App\Http\Controllers\WarningController;
+
+Route::get('/warning', WarningController::class);
+

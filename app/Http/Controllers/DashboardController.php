@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Patient;
 use App\Models\PatientExpense;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        $expenses = PatientExpense::with('patient')
+        $expenses = Patient::with('patient')
             ->orderBy('created_at', 'desc')
             ->get();
 
